@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+
+    <persistence-unit name="biblioteca-pu">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Autor</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Colleccio</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Departament</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Editor</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Exemplar</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Llengua</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Llibre</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.LliAut</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Nacionalitat</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.RolAutor</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Tema</class>
+        <class>cat.paucasesnovescifp.spaad.jpa.entitats.Ubicacio</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/biblioteca"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="root"/>
+            <property name="hibernate.connection.password" value="CalaClara21."/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+        </properties>
+    </persistence-unit>
+</persistence>
